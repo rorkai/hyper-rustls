@@ -12,7 +12,7 @@ documentation = "https://docs.rs/hyper-rustls/"
 
 [dependencies]
 http = "0.2"
-hyper = { version = "0.14", features = ["client"] }
+hyper = { version = "0.14", git = "https://github.com/rorkai/hyper.git", branch = "0.14.x" , features = ["client"] }
 rustls = { version = "0.21", default-features = false }
 tokio = "1"
 tokio-rustls = { version = "0.24", default-features = false }
@@ -22,7 +22,7 @@ rustls-native-certs = { version = "0.6", optional = true }
 webpki-roots = { version = "0.25", optional = true }
 
 [dev-dependencies]
-hyper = { version = "0.14", features = ["full"] }
+hyper = { version = "0.14", git = "https://github.com/rorkai/hyper.git", branch = "0.14.x" , features = ["full"] }
 rustls = { version = "0.21", default-features = false, features = ["tls12"] }
 rustls-pemfile = "1.0"
 tokio = { version = "1", features = ["io-std", "macros", "net", "rt-multi-thread"] }

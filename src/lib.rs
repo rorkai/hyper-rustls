@@ -104,6 +104,8 @@ pub use crate::connector::builder::ConnectorBuilder as HttpsConnectorBuilder;
 pub use crate::connector::HttpsConnector;
 pub use crate::stream::MaybeHttpsStream;
 
+pub use hyper;
+
 /// The various states of the [`HttpsConnectorBuilder`]
 pub mod builderstates {
     #[cfg(feature = "http2")]
